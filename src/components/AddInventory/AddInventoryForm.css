@@ -1,0 +1,69 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+  
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+input {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+button {
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+button:hover {
+    background-color: #060e0d;
+}
+  
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+  
+.add-button {
+    background-color: #d3e6d7;
+}
+
+.remove-button {
+    background-color: white;
+    color: #000; /* Ensure text color is visible */
+}
+
+.remove-button:hover {
+    background-color: #e0f0ff; /* Light blue color on hover */
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+  
+.product-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+.product-row input {
+    margin-right: 10px;
+}

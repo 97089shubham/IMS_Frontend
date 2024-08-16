@@ -1,0 +1,54 @@
+.home-container {
+    position: relative;
+    padding: 20px;
+  }
+  
+  .admin-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .admin-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .main-content {
+    text-align: center;
+    margin-top: 60px; /* Adjust top margin to account for the Admin button */
+  }
+  
+  select {
+    display: block;
+    margin: 20px auto 30px; /* Center the select box and add space below */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .proceed-button {
+    display: block;
+    margin: 0 auto; /* Center the button horizontally */
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .proceed-button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  .proceed-button:hover:not(:disabled) {
+    background-color: #218838;
+  }
+  
