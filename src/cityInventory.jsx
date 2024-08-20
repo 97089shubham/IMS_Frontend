@@ -37,7 +37,7 @@ function CityInventory() {
       return;
     }
     fetch(`http://localhost:8080/inventory/v1/skus/${cityId}`, {
-      headers: { 'client_id': 1 } // Example client ID; adjust as needed
+      headers: { 'client_id': 1 }
     })
       .then(response => response.json())
       .then(data => {

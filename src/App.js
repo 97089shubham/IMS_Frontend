@@ -4,7 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import CityInventory from './cityInventory';
-import Admin from './Admin';  // Import the Admin component
+import Admin from './Admin';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/city/:cityId" element={<CityInventory />} />
-        <Route path="/admin" element={<Admin />} />  {/* Add route for Admin */}
+        <Route path="/admin" element={<Admin />} /> 
       </Routes>
     </Router>
   );
