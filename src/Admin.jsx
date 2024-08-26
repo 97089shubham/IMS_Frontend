@@ -18,7 +18,7 @@ function Admin() {
   const [view, setView] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:8080/inventory/v1/cities')
+    axios.get('http://localhost:8080/inventory/v1/city')
       .then(response => {
         setCities(response.data.data || []);
       })
@@ -36,7 +36,7 @@ function Admin() {
       setView(null);
       setLoading(false);
     } else {
-      axios.get('http://localhost:8080/inventory/v1/audits', {
+      axios.get('http://localhost:8080/inventory/v1/audit', {
         headers: { 'client_id': 1 }
       })
       .then(response => {
@@ -60,7 +60,7 @@ function Admin() {
       setView(null);
       setLoading(false);
     } else {
-      axios.get('http://localhost:8080/inventory/v1/cities', {
+      axios.get('http://localhost:8080/inventory/v1/city', {
         headers: { 'client_id': 1 }
       })
       .then(response => {
@@ -84,7 +84,7 @@ function Admin() {
       setView(null);
       setLoading(false);
     } else {
-      axios.get('http://localhost:8080/inventory/v1/skus', {
+      axios.get('http://localhost:8080/inventory/v1/sku', {
         headers: { 'client_id': 1 }
       })
       .then(response => {
@@ -108,7 +108,7 @@ function Admin() {
       setView(null);
       setLoading(false);
     } else {
-      axios.get('http://localhost:8080/inventory/v1/inventories', {
+      axios.get('http://localhost:8080/inventory/v1/inventory', {
         headers: { 'client_id': 1 }
       })
       .then(response => {

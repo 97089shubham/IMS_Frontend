@@ -9,7 +9,7 @@ function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:8080/inventory/v1/cities')
+    axios.get('http://localhost:8080/inventory/v1/city')
       .then(response => {
         if (response.data && response.data.data) {
           setCities(response.data.data);

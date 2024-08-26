@@ -14,7 +14,7 @@ function CityInventory() {
 
   useEffect(() => {
     // Fetch city details and set the city name
-    axios.get('http://localhost:8080/inventory/v1/cities')
+    axios.get('http://localhost:8080/inventory/v1/city')
       .then(response => {
         const cities = response.data.data; // Adjust based on the actual response format
         const city = cities.find(city => city.cityID === parseInt(cityId));
@@ -36,7 +36,7 @@ function CityInventory() {
       console.error('City ID is not set');
       return;
     }
-    fetch(`http://localhost:8080/inventory/v1/skus/${cityId}`, {
+    fetch(`http://localhost:8080/inventory/v1/sku/${cityId}`, {
       headers: { 'client_id': 1 }
     })
       .then(response => response.json())
